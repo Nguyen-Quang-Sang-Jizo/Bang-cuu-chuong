@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng cửu chương</title>
+</head>
+<body>
+<script>
+    let sout = " <table border='1' width='300' cellpadding='3' cellspacing='3'>";
+    let i, j;
+    i =1;
+    while (i < 11) {
+        sout += "<tr>";
+        j = 2;
+        while (j < 11) {
+            sout += "<td>"+j+"*"+i+"=" + i * j + "</td>";
+            j++;
+        }
+        i++;
+    }
+    sout += "<table>";
+    document.write(sout);
+</script>
+</body>
+</html>
